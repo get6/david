@@ -1,2 +1,0 @@
-This is a placeholder file for the images directory in the add-image branch.
-Images would be stored here for the Flask application.

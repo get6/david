@@ -1,14 +1,4 @@
-from flask import Flask, render_template
+def hello():
+    print("Hello, Add image!")
 
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template('index.html', title='David Flask App')
-
-@app.route('/about')
-def about():
-    return render_template('about.html', title='About')
-
-if __name__ == '__main__':
-    app.run(debug=True)
+hello()
