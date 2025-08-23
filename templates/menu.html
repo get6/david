@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Menu</title>
+    <style>
+      body { font-family: Arial, sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#f7f7f7 }
+      .menu { background:white; padding:24px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.08); text-align:center }
+      .menu h1 { margin:0 0 16px }
+      .buttons { display:flex; gap:12px; justify-content:center }
+      button { padding:10px 18px; border:0; border-radius:6px; background:#0066cc; color:white; cursor:pointer; font-size:16px }
+      button.secondary { background:#555 }
+      button.ghost { background:transparent; color:#0066cc; border:1px solid #cfe3ff }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <h1>Menu</h1>
+      <div class="buttons">
+        <button onclick="location.href='/'">버튼 1</button>
+        <button class="secondary" onclick="alert('녹차 클릭')" style="width: 70px; height: 70px;">녹차</button>
+        <button class="ghost" onclick="alert('영차 클릭')">영차</button>
+      </div>
+    </div>
+  </body>
+</html>
