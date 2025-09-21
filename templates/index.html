@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home</title>
+    <style>
+      body { font-family: Arial, sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#f7f7f7 }
+      .container { background:white; padding:24px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.08); text-align:center }
+      .container h1 { margin:0 0 16px }
+      .hostname { font-size:14px; color:#666; margin-bottom:16px }
+      .buttons { display:flex; gap:12px; justify-content:center }
+      button { padding:10px 18px; border:0; border-radius:6px; background:#0066cc; color:white; cursor:pointer; font-size:16px }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      {{ computername }}<p>
+      <h1>홈 페이지</h1>
+      <div class="buttons">
+        <button onclick="location.href='/menu'">메뉴로 이동</button>
+      </div>
+    </div>
+  </body>
+</html>

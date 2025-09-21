@@ -1,11 +1,16 @@
 # python3 -m pip install --user flask
 from flask import Flask, render_template
+import socket
 
 app = Flask(__name__, template_folder='templates')
 
 @app.route('/')
-def index():
-    return '상단에 /menu 를 추가해주세요'
+def home():
+    if app.debug:
+        hostname = '컴퓨터(인스턴스) : ' + socket.gethostname()
+    else:
+        hostname = ' '
+    return render_template('index.html', computername=hostname)
 
 @app.route('/menu')
 def menu():
