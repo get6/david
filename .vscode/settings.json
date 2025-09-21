@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "/home/ittae.com/dev/david/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.extraPaths": [
+        "/home/ittae.com/dev/david/.venv/lib/python3.12/site-packages"
+    ]
+}
