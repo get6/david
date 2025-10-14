@@ -16,9 +16,9 @@ def home():
 def menu():
     return render_template('menu.html')
 
-@app.route("/test2")
-def test2():
-    return render_template('test2.html')
+@app.route("/test3")
+def test3():
+    return render_template('test3.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='127.0.0.1', port=5000)
