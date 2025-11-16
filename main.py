@@ -36,6 +36,13 @@ def main():
         print(f"Error reading file: {e}", file=sys.stderr)
         return
 
+
+    # 첫 줄이 'timestamp,event,message'인지 확인
+    first_line = text.splitlines()[0].strip() if text else ""
+    if first_line.lower().replace(' ', '') != 'timestamp,event,message':
+        print("[WARN] 로그 파일 첫 줄이 'timestamp,event,message'가 아닙니다.", file=sys.stderr)
+        return
+
     # 전체 내용 출력
     print("=== Raw log file content ===")
     print(text)
